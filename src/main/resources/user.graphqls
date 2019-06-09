@@ -1,0 +1,13 @@
+type Query {
+    users: [User]
+    user(id: ID!): User
+}
+
+type User {
+    id: ID!
+    name: String!
+    age: Int!
+    nationality: String
+    createdAt: String!
+    articles: [Article]
+}

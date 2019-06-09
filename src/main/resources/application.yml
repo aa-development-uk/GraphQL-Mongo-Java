@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: graphql-app
+  data:
+    mongodb:
+      database: graphql-app
+      port: 27017
+      host: ${MONGO_HOST:localhost}
+      username: ${MONGO_INITDB_ROOT_USERNAME:root}
+      password: ${MONGO_INITDB_ROOT_PASSWORD:example}
+      authentication-database: ${MONGO_INITDB_DATABASE:admin} # User is created in this DB
+server:
+  port: 9000
+graphql:
+  servlet:
+    enabled: true
+graphiql:
+  enabled: true
